@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Title -->
+    <title>Elegance</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.png">
+    <!-- Meta Links -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TailWindCSS File -->
+    <link href="/dist/output.css" rel="stylesheet">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="/Styles/typography.css">
+</head>
+
+<body>
+    <!--===============/ 
+       HEADER - START
+    /=================-->
+    <header id="header"
+        class="relative h-[720px] w-full bg-[url('/images/hero.jpg')] bg-cover bg-[center_top_0rem] bg-no-repeat">
+        <!-- Header Main Container -->
+        <div id="header__container" class="bg-white border-b-[1px] border-gray-500">
+            <!-- Header Main Content -->
+            <div id="header__content" class="relative flex items-center justify-start gap-10 p-6">
+                <!-- [1] Logo Name -->
+                <h1 id="header__logo" class="p-1 font-mono text-3xl font-bold text-black border-2 border-black">
+                    ELEGANCE
+                </h1>
+
+                <!-- [2] Navigation-->
+                <nav id="header__navigation">
+                    <!-- Navigation List -->
+                    <ul
+                        class="flex justify-around gap-6 font-semibold text-black pl-[50px] max-[1400px]:pl-[0px] max-[825px]:hidden">
+                        <!-- Navigation Link[1] -->
+                        <a href="#">
+                            <li
+                                class="pb-[1px] font-normal transition ease-in-out border-b-2 border-black delay-50 hover:-translate-y-1 hover:scale-110 duration300">
+                                Начало
+                            </li>
+                        </a>
+                        <!-- Divider -->
+                        <li>|</li>
+                        <!-- Navigation Link[2] -->
+                        <a href="#">
+                            <li
+                                class="transition font-normal ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">
+                                Магазин
+                            </li>
+                        </a>
+                        <!-- Divider -->
+                        <li>|</li>
+                        <!-- Navigation Link[3] -->
+                        <a href="#">
+                            <li
+                                class="transition font-normal ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">
+                                За нас
+                            </li>
+                        </a>
+                        <!-- Divider -->
+                        <li>|</li>
+                        <!-- Navigation Link[4] -->
+                        <a href="#">
+                            <li
+                                class="transition font-normal ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">
+                                Контакти</li>
+                        </a>
+                    </ul>
+                </nav>
+
+                <!-- [3] Search Form Container -->
+                <form id="topBar__search--form"
+                    class="items-center border-b-[1px] border-black md::flex ml-[60px] max-[1190px]:hidden">
+                    <!-- Search Icon with Input Field -->
+                    <div class="relative w-full">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <input type="text" id="search" class="w-96 pl-10 p-2.5" placeholder="| Какво търсиш днес ?"
+                            required>
+                    </div>
+                </form>
+
+                <!-- [3] Shopping Cart & Favorites Buttons - [START] -->
+                <div class="absolute flex right-[30px]">
+                    <a id="shopping__cart" href="">
+                        <svg class="text-black transition duration-100 ease-in-out cursor-pointer delay-150 rounded-lg hover:-translate-y-1 hover:scale-100"
+                            width="40" height="46" fill="none" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 26 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.75 7.75h11.5l-1.637 6.958a2 2 0 0 1-1.947 1.542h-4.127a2 2 0 0 1-1.933-1.488L7.75 7.75Zm0 0-.75-3H4.75">
+                            </path>
+                            <path fill="currentColor" stroke="none" d="M10 18a1 1 0 1 0 0 2 1 1 0 1 0 0-2z"></path>
+                            <path fill="currentColor" stroke="none" d="M17 18a1 1 0 1 0 0 2 1 1 0 1 0 0-2z"></path>
+                        </svg>
+                    </a>
+                    <svg class="text-black transition duration-100 ease-in-out delay-150 rounded-lg cursor-pointer hover:-translate-y-1 hover:scale-100"
+                        width="40" height="46" fill="none" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewBox="-3 0 30 25"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                </div>
+                <!-- [3] Shopping Cart & Favorites Buttons - [END] -->
+            </div>
+        </div>
+
+
+
+        <!-- Header Text - Season, New Collection, Perfect Style & Button -->
+        <div class="flex flex-col items-center text-white absolute bottom-56 right-20">
+            <h2 id="season" class="text-[50px]">Spring 2023</h2>
+            <h1 id="new__collection" class="text-[75px]">New Collection</h1>
+            <p id="collection__text" class="text-[30px]">Find the Perfect Style for You</p>
+            <!-- Shop now Button -->
+            <a href="#feautured__products--section">
+                <button id="shopButton"
+                    class="w-[150px] h-auto text-[18px] mt-5 bg-white rounded-full leading-[50px] text-black hover:scale-110 duration-300">Shop
+                    Now
+                </button>
+            </a>
+        </div>
+    </header>
+    <!--===============/ 
+       HEADER - END
+    /=================-->
+
+    <!--===============/ 
+        MAIN - START
+    /=================-->
+    <main>
+        <!--======================
+             Gender Categories 
+                Section 
+        ======================-->
+        <section id="gender__section"
+            class="flex justify-center items-center mt-10 z-[-1] h-[600px] max-[2000px]:h-[500px] max-[1600px]:h-[337px] max-[825px]:flex-col max-[825px]:h-[500px]">
+            <!-- Male Gender Container -->
+            <div id="genders__container" class="relative">
+                <!-- Model Img -->
+                <div id="gender__image"
+                    class="w-[600px] h-[300px] min-[2000px]:h-[400px] max-[2000px]:w-[500px] max-[1600px]:w-[500px] max-[1600px]:h-[266.66px] max-[1000px]:w-[300px] max-[1000px]:h-[200px] min-[825px]:rounded-tl-xl min-[825px]:rounded-bl-xl max-[825px]:rounded-tl-xl max-[825px]:rounded-tr-xl bg-[url('/images/maleModel.jpg')] bg-cover bg-center ">
+                </div>
+                <!-- Proceed Button -->
+                <a id="firstArrowButton"
+                    class="absolute bottom-[13px] right-[15px] text-white border-2 rounded-full hover:-translate-y-1 hover:scale-100 duration-300"
+                    href="#">
+                    <svg class="w-[40px] h-auto pl-[3px] max-[2000px]:w-[35px] max-[1600px]:w-[30px]" width="46"
+                        height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m9 18 6-6-6-6"></path>
+                    </svg></a>
+                <!--Model Img Text  -->
+                <p class="absolute bottom-[15px] left-[20px] text-white text-xl max-[2000px]:text-lg font-semibold">
+                    Мъже</p>
+            </div>
+
+            <!-- Female Gender Container -->
+            <div class="relative">
+                <!-- Model Img -->
+                <div
+                    class="w-[600px] h-[300px] min-[2000px]:h-[400px] max-[2000px]:w-[500px] max-[1600px]:w-[500px] max-[1600px]:h-[266.66px] max-[1000px]:w-[300px] max-[1000px]:h-[200px] min-[825px]:rounded-tr-xl min-[825px]:rounded-br-xl max-[825px]:rounded-bl-xl max-[825px]:rounded-br-xl bg-[url('/images/femaleModel.jpg')] bg-cover bg-center">
+                </div>
+                <!-- Proceed Button -->
+                <a id="secondArrowButton"
+                    class="absolute bottom-[13px] right-[15px] text-white border-2 rounded-full hover:-translate-y-1 hover:scale-100 duration-300"
+                    href="#">
+                    <svg class="w-[40px] h-auto pl-[3px] max-[2000px]:w-[35px] max-[1600px]:w-[30px]" width="46"
+                        height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m9 18 6-6-6-6"></path>
+                    </svg></a>
+                <!-- Model Img Text -->
+                <p class="absolute bottom-[15px] left-[20px] text-white text-xl max-[2000px]:text-lg font-semibold">
+                    Жени</p>
+            </div>
+        </section>
+
+        <!--======================
+             Feautured Products
+                 Section
+        ======================-->
+        <section id="feautured__products--section" class="">
+            <!-- Feautured Products Header -->
+            <h2 id="feautured__products--header" class="text-2xl text-center font-bold text-[#30364d]">
+                Представени продукти
+            </h2>
+            <!-- Feautured Products Section Buttons Pages -->
+            <ul id="featured__products--pages" class="flex items-center justify-center gap-7 mt-5">
+                <!-- Button[1] -->
+                <li class="flex flex-col items-center gap-1">
+                    <a href="" class="font-bold text-[#40689d]">Представени</a>
+                    <!-- Button Border -->
+                    <div id="divider" class="border-[1px] border-[#40689d] w-16"></div>
+                </li>
+                <!-- Button[2] -->
+                <li>
+                    <a href="" class="font-bold">Най-продавани</a>
+                </li>
+                <!-- Button[3] -->
+                <li>
+                    <a href="" class="font-bold">Нови издания</a>
+                </li>
+            </ul>
+            <!-- Feautured Items Container -->
+            <div id="featured__items--container" class="flex justify-center flex-wrap mt-8">
+                <!-- Item[1] -->
+                <div
+                    class="flex relative gap-[40px] max-[1400px]:gap-[30px] max-[1000px]:gap-[20px] max-[825px]:flex-col">
+                    <!-- [1.] Featured Product -->
+                    <div>
+                        <!-- Flip Card on Hover Effect -->
+                        <div id=""
+                            class="w-[350px] h-[525px] max-[1400px]:w-[300px] max-[1400px]:h-[447px] max-[1000px]:w-[250px] max-[1000px]:h-[372px]">
+                            <!-- Front & Back Container -->
+                            <div id="flip-card-inner">
+                                <!-- Front of the Card -->
+                                <div id="flip-card-front" class="rounded-[10px]">
+                                    <img src="/Images/products/left.jpg" class="w-auto h-auto rounded-[10px]">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product Description -->
+                        <p class="text-center">Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
+                        <!-- Product Price -->
+                        <p class="text-[20px] mb-[3px] text-center">$32.00</p>
+                    </div>
+                    <!-- [2.] Featured Product -->
+                    <div>
+                        <!-- Flip Card on Hover Effect -->
+                        <div id=""
+                            class="w-[350px] h-[525px] max-[1400px]:w-[300px] max-[1400px]:h-[447px] max-[1000px]:w-[250px] max-[1000px]:h-[372px]">
+                            <!-- Front & Back Container -->
+                            <div id="flip-card-inner">
+                                <!-- Front of the Card -->
+                                <div id="flip-card-front" class="rounded-[10px]">
+                                    <img src="/Images/products/white-t-shirt.jpg" class="w-auto h-auto rounded-[10px]">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product Description -->
+                        <p class="text-center">Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
+                        <!-- Product Price -->
+                        <p class="text-[20px] mb-[3px] text-center">$32.00</p>
+                    </div>
+                    <!-- [3.] Featured Product -->
+                    <div>
+                        <!-- Flip Card on Hover Effect -->
+                        <div id=""
+                            class="w-[350px] h-[525px] max-[1400px]:w-[300px] max-[1400px]:h-[447px] max-[1000px]:w-[250px] max-[1000px]:h-[372px]">
+                            <!-- Front & Back Container -->
+                            <div id="flip-card-inner">
+                                <!-- Front of the Card -->
+                                <div id="flip-card-front" class="rounded-[10px]">
+                                    <img src="/Images/products/black-t-shirt.jpg" class="w-auto h-auto rounded-[10px]">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product Description -->
+                        <p class="text-center">Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
+                        <!-- Product Price -->
+                        <p class="text-[20px] mb-[3px] text-center">$32.00</p>
+                    </div>
+                </div>
+        </section>
+        <div id="divider" class="border-[1px] border-[#e6e0f0] w-[1100px] m-auto"></div>
+    </main>
+    <!--===============/ 
+         MAIN - END
+    /=================-->
+
+    <footer></footer>
+    <!-- JavaScript Files -->
+    <script src="./JavaScript/script.js"></script>
+</body>
+
+</html>
